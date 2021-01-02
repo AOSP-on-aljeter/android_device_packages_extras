@@ -25,3 +25,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.service.adb.enable=1 \
     persist.service.debuggable=1
 endif
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
