@@ -1,0 +1,9 @@
+### Build the service
+
+- Clone the repository: device/packages/extras
+- Add inherit on your device.mk:
+
+```bash
+$(call inherit-product, device/packages/extras/main.mk)
+```
+
