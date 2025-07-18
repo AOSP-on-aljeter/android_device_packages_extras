@@ -26,5 +26,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.service.debuggable=1
 endif
 
+ifeq ($(TURBO_CHARGING_OVERLAY),true)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+endif
