@@ -10,10 +10,12 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 PRODUCT_PACKAGES += \
     RemovePackages
 
+ifeq ($(TARGET_OVERRIDE_PREBUILT),true)
 # Apps
 PRODUCT_PACKAGES += \
     CamX \
     Via
+endif
 
 # ADB properties
 ifeq ($(TARGET_ADB_LOGS),true)
